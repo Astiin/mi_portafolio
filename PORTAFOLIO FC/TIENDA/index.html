@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA FMCC</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+	<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-tr from-purple-500 to-blue-500 text-white">
+        <header class="inicio bg-primary text-primary-foreground p-4 shadow-md flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold tracking-wider">TIENDA FMCC</h1>
+            <nav class="mt-2 flex space-x-4">
+                <a href="#home" class="text-secondary hover:text-secondary-foreground">Home</a>
+                <a href="#menu" class="text-secondary hover:text-secondary-foreground">Menu</a>
+            </nav>
+        </header>
+
+        <main class="p-6">
+            <section id="home" class="flex flex-col items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('https://th.bing.com/th/id/OIG1.kDgh9XcfbJRbCIUaxz36?pid=ImgGn');">
+                <h2 class="text-6xl font-black mb-4 md:mb-8 animate-bounce">Vienvenidos a la tienda FMCC</h2>
+                <p class="text-2xl mb-8 md:mb-16">pide tus comidas favoritas en la tienda FMCC</p>
+                <button class="bg-accent text-accent-foreground px-8 py-4 rounded-full transform hover:scale-105 transition-transform duration-300">Explore el menu</button>
+            </section>
+
+            <section id="menu" class="py-12 bg-gradient-to-bl from-blue-300 to-purple-300 rounded-lg shadow-inner text-center text-zinc-800">
+                <h2 class="text-5xl font-bold mb-6">EL MENU DE HOY</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://static.eldiario.es/clip/512ea43a-99c2-42a9-b73b-645e448a7c0f_16-9-discover-aspect-ratio_default_0.jpg" alt="Delicious pizza" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Pizza</h3>
+                        <p class="text-lg text-muted-foreground mb-4"> 
+                            Un viaje a Italia en cada bocado. Base crujiente, salsa, mozzarella y variedad de ingredientes. ¡Perfecta para compartir!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://i.pinimg.com/originals/2a/be/70/2abe708280f9c0df4c0a6a0f3d43f44a.jpg" alt="Tasty sushi rolls" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Sushi</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Armonía en tu paladar. Arroz, pescado fresco y verduras en piezas exquisitas. Sabores y texturas únicas. ¡Experiencia completa con salsa de soja, wasabi y jengibre!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://tenndi.com/wp-content/uploads/2022/03/hamburguesa-con-papas.png" alt="Delicious burger" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Burger</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Clásico atemporal. Jugosa carne, queso, vegetales y salsa. ¡Infinitas combinaciones! Acompaña con papas fritas y bebida.
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://static.eldiario.es/clip/512ea43a-99c2-42a9-b73b-645e448a7c0f_16-9-discover-aspect-ratio_default_0.jpg" alt="Delicious pizza" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Pizza</h3>
+                        <p class="text-lg text-muted-foreground mb-4"> 
+                            Un viaje a Italia en cada bocado. Base crujiente, salsa, mozzarella y variedad de ingredientes. ¡Perfecta para compartir!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://i.pinimg.com/originals/2a/be/70/2abe708280f9c0df4c0a6a0f3d43f44a.jpg" alt="Tasty sushi rolls" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Sushi</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Armonía en tu paladar. Arroz, pescado fresco y verduras en piezas exquisitas. Sabores y texturas únicas. ¡Experiencia completa con salsa de soja, wasabi y jengibre!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://tenndi.com/wp-content/uploads/2022/03/hamburguesa-con-papas.png" alt="Delicious burger" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Burger</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Clásico atemporal. Jugosa carne, queso, vegetales y salsa. ¡Infinitas combinaciones! Acompaña con papas fritas y bebida.
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://static.eldiario.es/clip/512ea43a-99c2-42a9-b73b-645e448a7c0f_16-9-discover-aspect-ratio_default_0.jpg" alt="Delicious pizza" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Pizza</h3>
+                        <p class="text-lg text-muted-foreground mb-4"> 
+                            Un viaje a Italia en cada bocado. Base crujiente, salsa, mozzarella y variedad de ingredientes. ¡Perfecta para compartir!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://i.pinimg.com/originals/2a/be/70/2abe708280f9c0df4c0a6a0f3d43f44a.jpg" alt="Tasty sushi rolls" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Sushi</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Armonía en tu paladar. Arroz, pescado fresco y verduras en piezas exquisitas. Sabores y texturas únicas. ¡Experiencia completa con salsa de soja, wasabi y jengibre!
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                    <div class="pedido bg-card text-card-foreground p-6 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://tenndi.com/wp-content/uploads/2022/03/hamburguesa-con-papas.png" alt="Delicious burger" class="rounded-lg mb-4 shadow-lg" />
+                        <h3 class="text-3xl font-semibold mb-2">Burger</h3>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            Clásico atemporal. Jugosa carne, queso, vegetales y salsa. ¡Infinitas combinaciones! Acompaña con papas fritas y bebida.
+                        </p>
+                        <button class="btn bg-secondary text-secondary-foreground px-6 py-3 rounded-full hover:bg-secondary/80 bounce-top">ORDENAR</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

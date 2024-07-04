@@ -1,0 +1,104 @@
+body {
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+
+    .focus-in-expand {
+        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    @keyframes focus-in-expand {
+        0% {
+        letter-spacing: -0.5em;
+        transform: scale(0.5);
+        opacity: 0;
+        }
+        100% {
+        transform: scale(1);
+        opacity: 1;
+        }
+    }
+
+    .shake-vertical {
+        animation: shake-vertical 0.8s linear both;
+    }
+    
+    @keyframes shake-vertical {
+        0%, 100% {
+        transform: translateY(0);
+        }
+        10%, 30%, 50%, 70% {
+        transform: translateY(-8px);
+        }
+        20%, 40%, 60% {
+        transform: translateY(8px);
+        }
+        80% {
+        transform: translateY(6.4px);
+        }
+        90% {
+        transform: translateY(-6.4px);
+        }
+    }
+
+    .flex {
+        margin: 10px; /* Ajusta el valor según tus preferencias */
+    }
+    
+
+    .correo{
+        position: relative;
+        background-color: #3b83f6bc;
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+
+    .correo::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        border: 2px solid #002fff;
+        border-radius: 99px;
+        opacity: 0; /* Inicialmente oculto */
+        transition: opacity 0.5s ease; /* Transición suave al pasar el cursor */
+    }
+      /* muestra el borde azul */
+    .correo:hover::before {
+        opacity: 1;
+    }
+
+    .icono {
+        position: relative; /* Añade esto para posicionar el pseudo-elemento */
+        background-color: #3b83f6bc;
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 99px;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    
+      /* Pseudo-elemento para el borde azul */
+    .icono::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: calc(100% + 8px);
+        height: calc(100% + 8px);
+        border: 2px solid #002fff;
+        border-radius: 99px;
+        opacity: 0; /* Inicialmente oculto */
+        transition: opacity 0.5s ease; /* Transición suave al pasar el cursor */
+    }
+      /* muestra el borde azul */
+    .icono:hover::before {
+        opacity: 1;
+    }      

@@ -1,0 +1,22 @@
+.pedido {
+    background-color: white;
+}
+
+.inicio {
+    background-color: black;
+}
+
+.btn {
+    background-color: rgb(147, 179, 248);
+}
+
+.bounce-top {
+    -webkit-animation: bounce-top 0.9s both;
+            animation: bounce-top 0.9s both;
+}
+
+@keyframes bounce-top {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
